@@ -41,7 +41,7 @@ export default async function DeliveryPage() {
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E8E1D5]">
               <h2 className="font-bold text-base text-[#141210]">ثبت سفارش ارسال</h2>
               <div className="text-xs">
-                موجودی: <span className="font-bold font-num text-[#262A56]">{toPersianDigits(goldGrams.toFixed(4))} گرم</span>
+                موجودی: <span className="font-bold font-num text-[#133827]">{toPersianDigits(goldGrams.toFixed(4))} گرم</span>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ export default async function DeliveryPage() {
                   name="weightGrams"
                   dir="ltr"
                   placeholder="حداقل ۱ گرم"
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
               </div>
@@ -65,7 +65,7 @@ export default async function DeliveryPage() {
                   <input 
                     type="text" 
                     name="recipientName"
-                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                     required 
                   />
                 </div>
@@ -77,7 +77,7 @@ export default async function DeliveryPage() {
                     dir="ltr"
                     maxLength={11}
                     placeholder="09XXXXXXXXX"
-                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                     required 
                   />
                 </div>
@@ -88,7 +88,7 @@ export default async function DeliveryPage() {
                 <textarea 
                   name="address"
                   rows={3}
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white resize-none transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white resize-none transition-all"
                   required 
                 />
               </div>
@@ -99,7 +99,7 @@ export default async function DeliveryPage() {
                   <input 
                     type="text" 
                     name="city"
-                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                     required 
                   />
                 </div>
@@ -110,14 +110,14 @@ export default async function DeliveryPage() {
                     name="postalCode"
                     dir="ltr"
                     maxLength={10}
-                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                    className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                     required 
                   />
                 </div>
               </div>
 
               <div className="bg-[#FAF8F5] p-4 rounded-2xl border border-[#E8E1D5] flex gap-3 text-xs text-[#4A463F] mt-4">
-                <Info className="h-5 w-5 flex-shrink-0 text-[#B8621B]" />
+                <Info className="h-5 w-5 flex-shrink-0 text-[#C9A857]" />
                 <p className="leading-relaxed">
                   هزینه ثابت ارسال محرمانه (۵۰,۰۰۰ تومان) و بیمه مرسوله (۲۰,۰۰۰ تومان) از کیف پول نقدی کسر می‌گردد.
                 </p>
@@ -126,7 +126,7 @@ export default async function DeliveryPage() {
               <Button 
                 type="submit"
                 variant="primary"
-                className="w-full mt-2 py-4 rounded-full text-xs font-bold shadow-copper-glow flex items-center justify-center gap-2"
+                className="w-full mt-2 py-4 rounded-full text-xs font-bold shadow-gold-glow flex items-center justify-center gap-2"
               >
                 <Truck className="h-4 w-4" />
                 <span>ثبت درخواست و هماهنگی ارسال</span>
@@ -140,7 +140,7 @@ export default async function DeliveryPage() {
           <h2 className="font-bold text-base text-[#141210]">پیگیری مرسوله‌ها</h2>
           {deliveries.length === 0 ? (
             <div className="bg-white rounded-3xl p-10 sm:p-14 text-center border border-[#E8E1D5] shadow-xs space-y-3">
-              <Package className="h-10 w-10 mx-auto text-[#B8621B] opacity-60" />
+              <Package className="h-10 w-10 mx-auto text-[#C9A857] opacity-60" />
               <p className="text-sm font-semibold text-[#141210]">سفارش تحویلی ثبت نشده است.</p>
               <p className="text-xs text-[#7D776C] font-light max-w-sm mx-auto">
                 پس از ثبت درخواست، اطلاعات رهگیری پستی و وضعیت بسته‌بندی در این بخش قابل پیگیری خواهد بود.
@@ -151,12 +151,12 @@ export default async function DeliveryPage() {
               {deliveries.map(order => (
                 <div key={order.id} className="bg-white rounded-3xl p-5 border border-[#E8E1D5] shadow-xs space-y-3">
                   <div className="flex justify-between items-center pb-3 border-b border-[#E8E1D5]">
-                    <span className="font-bold text-base font-num text-[#262A56]">
+                    <span className="font-bold text-base font-num text-[#133827]">
                       {toPersianDigits((Number(order.weightNg) / 1_000_000_000).toFixed(2))} گرم طلا
                     </span>
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                       order.status === 'DELIVERED' ? 'bg-emerald-50 text-emerald-800' :
-                      order.status === 'SHIPPED' ? 'bg-[#1A1D3D] text-[#E3CCAE]' :
+                      order.status === 'SHIPPED' ? 'bg-[#0A2218] text-[#E3CCAE]' :
                       'bg-amber-50 text-amber-800'
                     }`}>
                       {order.status === 'REQUESTED' ? 'درخواست شده' :
@@ -171,7 +171,7 @@ export default async function DeliveryPage() {
                     <p>گیرنده: <span className="font-semibold text-[#141210]">{order.recipientName}</span></p>
                     <p className="truncate">آدرس: {order.deliveryAddress}</p>
                     {order.trackingCode && (
-                      <p className="mt-2 text-[#262A56] font-semibold font-num">
+                      <p className="mt-2 text-[#133827] font-semibold font-num">
                         کد رهگیری پستی: {order.trackingCode}
                       </p>
                     )}

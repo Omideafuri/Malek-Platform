@@ -46,8 +46,8 @@ export default async function TransactionsPage() {
           </p>
         </div>
         
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E8E1D5] text-xs text-[#262A56] font-semibold self-start sm:self-auto shadow-xs">
-          <ShieldCheck className="w-4 h-4 text-[#B8621B]" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E8E1D5] text-xs text-[#133827] font-semibold self-start sm:self-auto shadow-xs">
+          <ShieldCheck className="w-4 h-4 text-[#C9A857]" />
           <span>تضمین دفتر کل بدون دستکاری</span>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default async function TransactionsPage() {
       <div className="bg-white rounded-3xl border border-[#E8E1D5] overflow-hidden shadow-xs">
         {transactions.length === 0 ? (
           <div className="p-12 text-center text-[#7D776C]">
-            <ArrowUpDown className="w-8 h-8 text-[#B8621B] mx-auto mb-3 opacity-60" />
+            <ArrowUpDown className="w-8 h-8 text-[#C9A857] mx-auto mb-3 opacity-60" />
             <p className="text-sm font-semibold text-[#141210]">هنوز تراکنشی در این حساب ثبت نشده است.</p>
             <p className="text-xs text-[#7D776C] mt-1 font-light">پس از اولین خرید یا واریز، تراکنش‌های شما در این بخش نمایش داده می‌شوند.</p>
           </div>
@@ -93,8 +93,8 @@ export default async function TransactionsPage() {
                     <td className="px-6 py-4">
                       <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${
                         tx.walletType === 'CASH' 
-                          ? 'bg-[#1A1D3D] text-[#E3CCAE]' 
-                          : 'bg-[#E3CCAE] text-[#262A56]'
+                          ? 'bg-[#0A2218] text-[#E3CCAE]' 
+                          : 'bg-[#E3CCAE] text-[#133827]'
                       }`}>
                         {tx.walletType === 'CASH' ? 'ریالی' : 'طلا'}
                       </span>

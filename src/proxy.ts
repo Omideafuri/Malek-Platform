@@ -23,11 +23,11 @@ export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Check for session cookie
-  const sessionToken = request.cookies.get('zaravi_session')?.value;
+  const sessionToken = request.cookies.get('malektalaa_session')?.value;
   const isAuthenticated = !!sessionToken;
 
   // Check admin role (stored in a separate cookie for proxy performance)
-  const userRole = request.cookies.get('zaravi_role')?.value;
+  const userRole = request.cookies.get('malektalaa_role')?.value;
   const isAdmin = ['ADMIN', 'SUPER_ADMIN'].includes(userRole || '');
 
   // Redirect authenticated users away from auth pages

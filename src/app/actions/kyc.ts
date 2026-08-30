@@ -15,7 +15,7 @@ export async function submitKycAction(formData: FormData) {
     
     // In a real app, we'd process files and upload to S3 here.
     // We'll mock the URLs for the MVP.
-    const mockUrl = 'https://mock-storage.zaravi.gold/placeholder.jpg';
+    const mockUrl = 'https://mock-storage.malektalaa.com/placeholder.jpg';
 
     // 1. Update Profile
     await db.profile.upsert({

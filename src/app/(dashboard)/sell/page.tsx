@@ -63,7 +63,7 @@ export default function SellGoldPage() {
               onClick={() => { setMode('BY_WEIGHT'); setInputValue(''); }}
               className={`flex-1 py-2.5 text-xs font-bold rounded-xl transition-all ${
                 mode === 'BY_WEIGHT'
-                  ? 'bg-[#262A56] text-white shadow-xs'
+                  ? 'bg-[#133827] text-white shadow-xs'
                   : 'text-[#7D776C] hover:text-[#141210]'
               }`}
             >
@@ -74,7 +74,7 @@ export default function SellGoldPage() {
               onClick={() => { setMode('BY_AMOUNT'); setInputValue(''); }}
               className={`flex-1 py-2.5 text-xs font-bold rounded-xl transition-all ${
                 mode === 'BY_AMOUNT'
-                  ? 'bg-[#262A56] text-white shadow-xs'
+                  ? 'bg-[#133827] text-white shadow-xs'
                   : 'text-[#7D776C] hover:text-[#141210]'
               }`}
             >
@@ -94,7 +94,7 @@ export default function SellGoldPage() {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value.replace(/[^0-9.]/g, ''))}
                 placeholder={mode === 'BY_AMOUNT' ? '1,000,000' : '1.500'}
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3.5 text-lg font-num text-left placeholder:text-[#7D776C] focus:border-[#262A56] focus:bg-white outline-none transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3.5 text-lg font-num text-left placeholder:text-[#7D776C] focus:border-[#133827] focus:bg-white outline-none transition-all"
                 required
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-[#7D776C]">
@@ -104,8 +104,8 @@ export default function SellGoldPage() {
           </div>
 
           <div className="bg-[#FAF8F5] p-4 rounded-2xl border border-[#E8E1D5] space-y-2 text-xs text-[#4A463F]">
-            <div className="flex items-center gap-2 text-[#262A56] font-semibold">
-              <ShieldCheck className="w-4 h-4 text-[#B8621B]" />
+            <div className="flex items-center gap-2 text-[#133827] font-semibold">
+              <ShieldCheck className="w-4 h-4 text-[#C9A857]" />
               <span>تسویه آنی و بدون کارمزد مخفی</span>
             </div>
             <p className="text-[11px] text-[#7D776C] leading-relaxed">
@@ -120,7 +120,7 @@ export default function SellGoldPage() {
             variant="secondary"
             className="w-full py-4 rounded-full text-xs font-bold flex items-center justify-center gap-2"
           >
-            <TrendingUp className="h-4 w-4 text-[#B8621B]" />
+            <TrendingUp className="h-4 w-4 text-[#C9A857]" />
             <span>تأیید و فروش لحظه‌ای</span>
           </Button>
         </form>

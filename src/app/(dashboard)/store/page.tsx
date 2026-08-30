@@ -23,8 +23,8 @@ async function ensureMockProducts() {
       await db.product.createMany({
         data: [
           {
-            nameFa: 'شمش ۵ گرمی زروی',
-            nameEn: 'Zaravi 5g Cast Gold Bar',
+            nameFa: 'شمش ۵ گرمی ملک طلا',
+            nameEn: 'Malek Talaa 5g Cast Gold Bar',
             category: 'BAR',
             goldType: '18K',
             weightNg: BigInt(5_000_000_000),
@@ -88,7 +88,7 @@ export default async function StorePage() {
       <div className="pt-4">
         <div className="flex items-center gap-3 mb-4">
           <span className="diamond-motif" />
-          <span className="text-xs tracking-brand text-[#7D776C]">گالری فیزیکی زروی</span>
+          <span className="text-xs tracking-brand text-[#7D776C]">گالری فیزیکی ملک طلا</span>
         </div>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-[#E8E1D5] pb-10">
           <div className="max-w-xl">
@@ -99,7 +99,7 @@ export default async function StorePage() {
           </div>
           <div className="text-left border border-[#E8E1D5] rounded-2xl p-6 bg-white shadow-xs min-w-[240px]">
             <p className="text-xs tracking-brand text-[#7D776C] mb-2">موجودی کیف پول ریالی</p>
-            <p className="text-2xl font-bold font-num text-[#262A56]">
+            <p className="text-2xl font-bold font-num text-[#133827]">
               {formatNumber(cashBalanceToman)} <span className="text-sm font-normal text-[#7D776C]">تومان</span>
             </p>
           </div>
@@ -119,7 +119,7 @@ export default async function StorePage() {
           const imageSrc = product.imageUrl || productImages[product.category] || '/images/product_bar.jpg';
 
           return (
-            <div key={product.id} className="grid md:grid-cols-12 rounded-3xl border border-[#E8E1D5] bg-white overflow-hidden shadow-xs hover:border-[#B8621B]/40 hover:shadow-md transition-all duration-500 group">
+            <div key={product.id} className="grid md:grid-cols-12 rounded-3xl border border-[#E8E1D5] bg-white overflow-hidden shadow-xs hover:border-[#C9A857]/40 hover:shadow-md transition-all duration-500 group">
               {/* Product Visual */}
               <div className={`md:col-span-6 bg-[#FAF8F5] flex items-center justify-center min-h-[340px] md:min-h-[420px] relative overflow-hidden p-8 image-hover-zoom ${idx % 2 === 1 ? 'md:order-2' : ''}`}>
                 <div className="relative w-full h-full max-w-[320px] aspect-square rounded-2xl overflow-hidden border border-[#E8E1D5] bg-white p-4">
@@ -144,10 +144,10 @@ export default async function StorePage() {
               <div className={`md:col-span-6 p-8 md:p-12 flex flex-col justify-between ${idx % 2 === 1 ? 'md:order-1' : ''}`}>
                 <div>
                   <div className="flex justify-between items-start mb-4">
-                    <span className="text-xs tracking-brand font-bold text-[#B8621B]">
+                    <span className="text-xs tracking-brand font-bold text-[#C9A857]">
                       قطعه ۰{toPersianDigits((idx + 1).toString())}
                     </span>
-                    <span className="text-xs font-mono font-bold text-[#262A56] uppercase">
+                    <span className="text-xs font-mono font-bold text-[#133827] uppercase">
                       {toPersianDigits(weightGrams.toString())} G
                     </span>
                   </div>
@@ -167,7 +167,7 @@ export default async function StorePage() {
                     </div>
                     <div className="flex justify-between items-center border-t border-[#E8E1D5] pt-4">
                       <span className="font-bold text-[#141210]">مبلغ کل قابل پرداخت</span>
-                      <span className="text-2xl font-bold font-num text-[#262A56] tracking-tight">{formatNumber(totalPriceToman)} تومان</span>
+                      <span className="text-2xl font-bold font-num text-[#133827] tracking-tight">{formatNumber(totalPriceToman)} تومان</span>
                     </div>
                   </div>
                 </div>

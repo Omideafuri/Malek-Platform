@@ -18,7 +18,7 @@ export default function SettingsPage() {
       <div className="space-y-4">
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#262A56]">
+            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#133827]">
               <Lock className="h-5 w-5" />
             </div>
             <div>
@@ -33,7 +33,7 @@ export default function SettingsPage() {
 
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#262A56]">
+            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#133827]">
               <Shield className="h-5 w-5" />
             </div>
             <div>
@@ -48,7 +48,7 @@ export default function SettingsPage() {
 
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#262A56]">
+            <div className="w-10 h-10 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] flex items-center justify-center text-[#133827]">
               <Bell className="h-5 w-5" />
             </div>
             <div>

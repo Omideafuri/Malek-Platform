@@ -66,7 +66,7 @@ export default function WalletPage() {
                 value={amount}
                 onChange={(e) => setAmount(e.target.value.replace(/[^0-9]/g, ''))}
                 placeholder="1,000,000"
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3.5 text-lg font-num text-left placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3.5 text-lg font-num text-left placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
                 required
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-[#7D776C]">
@@ -76,8 +76,8 @@ export default function WalletPage() {
           </div>
 
           <div className="bg-[#FAF8F5] p-4 rounded-2xl border border-[#E8E1D5] space-y-2 text-xs text-[#4A463F]">
-            <div className="flex items-center gap-2 text-[#262A56] font-semibold">
-              <ShieldCheck className="w-4 h-4 text-[#B8621B]" />
+            <div className="flex items-center gap-2 text-[#133827] font-semibold">
+              <ShieldCheck className="w-4 h-4 text-[#C9A857]" />
               <span>پروتکل امن پرداخت شاپرک (شاپرک ۲)</span>
             </div>
             <p className="text-[11px] text-[#7D776C] leading-relaxed">
@@ -90,7 +90,7 @@ export default function WalletPage() {
             disabled={!amount}
             isLoading={isPending}
             variant="primary"
-            className="w-full py-4 rounded-full text-xs font-bold shadow-copper-glow flex items-center justify-center gap-2"
+            className="w-full py-4 rounded-full text-xs font-bold shadow-gold-glow flex items-center justify-center gap-2"
           >
             <CreditCard className="h-4 w-4" />
             <span>انتقال به درگاه امن بانکی</span>

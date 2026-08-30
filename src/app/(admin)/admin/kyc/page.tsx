@@ -37,7 +37,7 @@ export default async function AdminKycPage() {
       <div className="bg-white rounded-3xl border border-[#E8E1D5] overflow-hidden shadow-xs">
         {applications.length === 0 ? (
           <div className="p-12 text-center text-[#7D776C] space-y-2">
-            <ShieldCheck className="w-8 h-8 text-[#B8621B] mx-auto opacity-60" />
+            <ShieldCheck className="w-8 h-8 text-[#C9A857] mx-auto opacity-60" />
             <p className="text-sm font-semibold text-[#141210]">هیچ درخواستی در صف انتظار نیست.</p>
             <p className="text-xs font-light">تمامی پرونده‌های دریافتی تعیین تکلیف گردیده‌اند.</p>
           </div>
@@ -61,7 +61,7 @@ export default async function AdminKycPage() {
                     <td className="px-6 py-4 font-semibold text-xs sm:text-sm text-[#141210]">
                       {app.user.profile?.firstName} {app.user.profile?.lastName}
                     </td>
-                    <td className="px-6 py-4 font-num text-xs text-[#262A56]">
+                    <td className="px-6 py-4 font-num text-xs text-[#133827]">
                       {app.user.profile?.nationalId}
                     </td>
                     <td className="px-6 py-4">

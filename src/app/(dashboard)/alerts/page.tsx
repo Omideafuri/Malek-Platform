@@ -39,13 +39,13 @@ export default async function AlertsPage() {
         <div className="lg:col-span-5">
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs sticky top-24">
             <div className="flex items-center gap-2 mb-4">
-              <Bell className="h-5 w-5 text-[#B8621B]" />
+              <Bell className="h-5 w-5 text-[#C9A857]" />
               <h2 className="font-bold text-base text-[#141210]">ثبت هشدار جدید</h2>
             </div>
             
             <div className="bg-[#FAF8F5] p-4 rounded-2xl border border-[#E8E1D5] mb-5 text-center">
               <p className="text-[11px] text-[#7D776C] mb-1">قیمت فعلی بازار (خرید)</p>
-              <p className="font-bold font-num text-lg text-[#262A56]">{formatNumber(currentPriceToman)} تومان</p>
+              <p className="font-bold font-num text-lg text-[#133827]">{formatNumber(currentPriceToman)} تومان</p>
             </div>
 
             <form action={createAlertAction as unknown as string} className="space-y-4">
@@ -58,7 +58,7 @@ export default async function AlertsPage() {
                       <span className="font-bold text-[#141210]">بالاتر از</span>
                       <TrendingUp className="h-4 w-4 text-emerald-700" />
                     </div>
-                    <div className="absolute inset-0 rounded-2xl border-2 border-transparent peer-checked:border-[#B8621B] pointer-events-none"></div>
+                    <div className="absolute inset-0 rounded-2xl border-2 border-transparent peer-checked:border-[#C9A857] pointer-events-none"></div>
                   </label>
                   <label className="relative flex cursor-pointer rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] p-3 hover:bg-white transition-all">
                     <input type="radio" name="conditionType" value="BELOW" className="peer sr-only" />
@@ -66,7 +66,7 @@ export default async function AlertsPage() {
                       <span className="font-bold text-[#141210]">پایین‌تر از</span>
                       <TrendingDown className="h-4 w-4 text-rose-700" />
                     </div>
-                    <div className="absolute inset-0 rounded-2xl border-2 border-transparent peer-checked:border-[#B8621B] pointer-events-none"></div>
+                    <div className="absolute inset-0 rounded-2xl border-2 border-transparent peer-checked:border-[#C9A857] pointer-events-none"></div>
                   </label>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default async function AlertsPage() {
                   name="targetPrice"
                   dir="ltr"
                   placeholder={formatNumber(currentPriceToman)}
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
               </div>
@@ -86,7 +86,7 @@ export default async function AlertsPage() {
               <Button 
                 type="submit"
                 variant="primary"
-                className="w-full mt-2 py-3.5 rounded-full text-xs font-bold shadow-copper-glow"
+                className="w-full mt-2 py-3.5 rounded-full text-xs font-bold shadow-gold-glow"
               >
                 ثبت و فعال‌سازی هشدار
               </Button>
@@ -100,7 +100,7 @@ export default async function AlertsPage() {
           
           {alerts.length === 0 ? (
             <div className="bg-white rounded-3xl p-10 sm:p-14 text-center border border-[#E8E1D5] shadow-xs space-y-3">
-              <BellRing className="h-10 w-10 mx-auto text-[#B8621B] opacity-60" />
+              <BellRing className="h-10 w-10 mx-auto text-[#C9A857] opacity-60" />
               <p className="text-sm font-semibold text-[#141210]">شما هنوز هشدار قیمتی تعریف نکرده‌اید.</p>
               <p className="text-xs text-[#7D776C] font-light max-w-sm mx-auto">
                 با مشخص کردن قیمت هدف، به محض تغییرات بازار پیامک فوری برای شما ارسال می‌شود.
@@ -130,7 +130,7 @@ export default async function AlertsPage() {
 
                 <div className="flex items-center gap-3">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    alert.isTriggered ? 'bg-[#FAF8F5] text-[#7D776C]' : 'bg-[#E3CCAE] text-[#262A56]'
+                    alert.isTriggered ? 'bg-[#FAF8F5] text-[#7D776C]' : 'bg-[#E3CCAE] text-[#133827]'
                   }`}>
                     {alert.isTriggered ? 'به هدف رسید' : 'فعال'}
                   </span>

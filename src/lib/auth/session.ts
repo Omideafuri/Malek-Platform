@@ -3,8 +3,8 @@ import { randomBytes, createHash } from 'node:crypto';
 import { cookies, headers } from 'next/headers';
 import type { User } from '@prisma/client';
 
-export const SESSION_COOKIE_NAME = 'zaravi_session';
-export const ROLE_COOKIE_NAME = 'zaravi_role';
+export const SESSION_COOKIE_NAME = 'malektalaa_session';
+export const ROLE_COOKIE_NAME = 'malektalaa_role';
 export const SESSION_MAX_AGE = 30 * 24 * 60 * 60; // 30 days in seconds
 
 /**
@@ -61,45 +61,50 @@ export async function createSession(user: Pick<User, 'id' | 'role'>) {
  * Returns the user if valid, otherwise null.
  */
 export async function getCurrentUser() {
-  const cookieStore = await cookies();
-  const token = cookieStore.get(SESSION_COOKIE_NAME)?.value;
-  
-  if (!token) {
-    return null;
-  }
+  try {
+    const cookieStore = await cookies();
+    const token = cookieStore.get(SESSION_COOKIE_NAME)?.value;
+    
+    if (!token) {
+      return null;
+    }
 
-  const tokenHash = createHash('sha256').update(token).digest('hex');
+    const tokenHash = createHash('sha256').update(token).digest('hex');
 
-  const session = await db.session.findUnique({
-    where: { tokenHash },
-    include: {
-      user: {
-        select: {
-          id: true,
-          mobile: true,
-          role: true,
-          status: true,
-          profile: {
-            select: {
-              firstName: true,
-              lastName: true,
+    const session = await db.session.findUnique({
+      where: { tokenHash },
+      include: {
+        user: {
+          select: {
+            id: true,
+            mobile: true,
+            role: true,
+            status: true,
+            profile: {
+              select: {
+                firstName: true,
+                lastName: true,
+              },
             },
           },
         },
       },
-    },
-  });
+    });
 
-  if (!session || session.expiresAt < new Date()) {
+    if (!session || session.expiresAt < new Date()) {
+      return null;
+    }
+
+    // Check if user is still active
+    if (session.user.status !== 'ACTIVE') {
+      return null;
+    }
+
+    return session.user;
+  } catch (error) {
+    console.error('Error validating session:', error);
     return null;
   }
-
-  // Check if user is still active
-  if (session.user.status !== 'ACTIVE') {
-    return null;
-  }
-
-  return session.user;
 }
 
 /**

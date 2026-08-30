@@ -51,7 +51,7 @@ export async function generateAndSendOtp(mobile: string, purpose: OtpPurpose) {
   const notifier = getNotificationProvider();
   await notifier.sendSms(
     mobile,
-    `کد تأیید شما در زروی:\n${code}\nاین کد تا ۲ دقیقه معتبر است.`
+    `کد تأیید شما در ملک طلا:\n${code}\nاین کد تا ۲ دقیقه معتبر است.`
   );
 
   return true;

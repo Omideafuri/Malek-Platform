@@ -1,16 +1,20 @@
 export const siteConfig = {
-  name: 'Zaravi Gold',
-  nameFa: 'زروی',
-  description: 'پلتفرم خرید، فروش و سرمایهگذاری طلای دیجیتال',
+  name: 'Malek',
+  nameFa: 'ملک طلا',
+  brandHandle: '@malektalaa',
+  instagramUrl: 'https://www.instagram.com/malektalaa/',
+  whatsappUrl: 'https://wa.me/989120000000',
+  description: 'گالری و خانه رسمی طلا، مسکوکات و شمش‌های استاندارد سرمایه‌گذاری ملک طلا',
   url: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
   ogImage: '/images/og-image.jpg',
   links: {
     support: '/support',
     terms: '/terms',
     privacy: '/privacy',
+    instagram: 'https://www.instagram.com/malektalaa/',
   },
   contact: {
-    email: 'info@zaravi.gold',
-    phone: '021-XXXXXXXX',
+    email: 'concierge@malektalaa.com',
+    phone: '۰۲۱-۸۸۸۸۰۰۰۰',
   },
 } as const;

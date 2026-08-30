@@ -35,7 +35,7 @@ export default async function SavingsPage() {
         <div className="lg:col-span-5">
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs sticky top-24">
             <div className="flex items-center gap-2 mb-6">
-              <PiggyBank className="h-5 w-5 text-[#B8621B]" />
+              <PiggyBank className="h-5 w-5 text-[#C9A857]" />
               <h2 className="font-bold text-base text-[#141210]">ایجاد برنامه پس‌انداز جدید</h2>
             </div>
             
@@ -46,7 +46,7 @@ export default async function SavingsPage() {
                   type="text" 
                   name="name"
                   placeholder="مثال: پس‌انداز ماهانه فرزندم"
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
               </div>
@@ -55,7 +55,7 @@ export default async function SavingsPage() {
                 <label className="block text-xs font-bold text-[#141210] mb-1.5">دوره زمانی تکرار</label>
                 <select 
                   name="frequency"
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required
                 >
                   <option value="DAILY">خرید روزانه</option>
@@ -71,7 +71,7 @@ export default async function SavingsPage() {
                   name="amount"
                   dir="ltr"
                   placeholder="500,000"
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-sm outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
                 <p className="text-[11px] text-[#7D776C] mt-1 font-light">حداقل ۱۰۰ هزار تومان</p>
@@ -80,7 +80,7 @@ export default async function SavingsPage() {
               <Button 
                 type="submit"
                 variant="primary"
-                className="w-full mt-2 py-3.5 rounded-full text-xs font-bold shadow-copper-glow flex items-center justify-center gap-2"
+                className="w-full mt-2 py-3.5 rounded-full text-xs font-bold shadow-gold-glow flex items-center justify-center gap-2"
               >
                 <Plus className="h-4 w-4" />
                 <span>ثبت و فعال‌سازی برنامه</span>
@@ -95,7 +95,7 @@ export default async function SavingsPage() {
           
           {plans.length === 0 ? (
             <div className="bg-white rounded-3xl p-10 sm:p-14 text-center border border-[#E8E1D5] shadow-xs space-y-3">
-              <Layers className="h-10 w-10 mx-auto text-[#B8621B] opacity-60" />
+              <Layers className="h-10 w-10 mx-auto text-[#C9A857] opacity-60" />
               <p className="text-sm font-semibold text-[#141210]">شما هنوز برنامه پس‌اندازی تعریف نکرده‌اید.</p>
               <p className="text-xs text-[#7D776C] font-light max-w-sm mx-auto">
                 با ایجاد برنامه پس‌انداز، سیستم به صورت دوره‌ای و خودکار از موجودی شما طلا خریداری می‌کند.
@@ -108,7 +108,7 @@ export default async function SavingsPage() {
                   <div>
                     <h3 className="font-bold text-base text-[#141210]">{plan.name}</h3>
                     <p className="text-xs text-[#4A463F] mt-1 font-light">
-                      خرید <span className="font-bold font-num text-[#262A56]">{formatNumber(Number(plan.amountRial) / 10)} تومان</span> به صورت{' '}
+                      خرید <span className="font-bold font-num text-[#133827]">{formatNumber(Number(plan.amountRial) / 10)} تومان</span> به صورت{' '}
                       {plan.frequency === 'DAILY' ? 'روزانه' : plan.frequency === 'WEEKLY' ? 'هفتگی' : 'ماهانه'}
                     </p>
                   </div>
@@ -122,7 +122,7 @@ export default async function SavingsPage() {
                 <div className="grid grid-cols-2 gap-4 text-xs bg-[#FAF8F5] p-4 rounded-2xl border border-[#E8E1D5]">
                   <div>
                     <span className="text-[#7D776C] block text-[11px] mb-1">کل پس‌انداز تا این لحظه</span>
-                    <span className="font-bold font-num text-[#262A56] text-sm">{formatNumber(Number(plan.totalSpentRial) / 10)} تومان</span>
+                    <span className="font-bold font-num text-[#133827] text-sm">{formatNumber(Number(plan.totalSpentRial) / 10)} تومان</span>
                   </div>
                   <div>
                     <span className="text-[#7D776C] block text-[11px] mb-1">نوبت خرید بعدی</span>

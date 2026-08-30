@@ -101,7 +101,7 @@ export async function checkPriceAlerts() {
       
       await notifications.sendSms(
         alert.user.mobile,
-        `زروی: هشدار قیمت طلا! قیمت طلا اکنون ${conditionFa} ${targetToman} تومان است.`
+        `ملک طلا: هشدار قیمت طلا! قیمت طلا اکنون ${conditionFa} ${targetToman} تومان است.`
       );
 
       triggeredCount++;

@@ -92,7 +92,7 @@ export default async function AdminPricesPage() {
                 name="buySpreadBp"
                 type="number" 
                 defaultValue={activeConfig.buySpreadBp}
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
               />
               <p className="text-[11px] text-[#7D776C] mt-1.5 font-light">۱۰۰ واحد = ۱٪ اضافه روی نرخ پایه خرید</p>
             </div>
@@ -105,7 +105,7 @@ export default async function AdminPricesPage() {
                 name="sellSpreadBp"
                 type="number" 
                 defaultValue={activeConfig.sellSpreadBp}
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
               />
               <p className="text-[11px] text-[#7D776C] mt-1.5 font-light">۱۰۰ واحد = ۱٪ کسر از نرخ پایه فروش</p>
             </div>
@@ -118,7 +118,7 @@ export default async function AdminPricesPage() {
                 name="feeBp"
                 type="number" 
                 defaultValue={activeConfig.feeBp}
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-left font-num text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
               />
               <p className="text-[11px] text-[#7D776C] mt-1.5 font-light">۵۰ واحد = ۰.۵٪ کارمزد تسویه شبکه</p>
             </div>
@@ -128,7 +128,7 @@ export default async function AdminPricesPage() {
             <Button 
               type="submit"
               variant="primary"
-              className="px-8 py-3 rounded-full text-xs font-bold shadow-copper-glow"
+              className="px-8 py-3 rounded-full text-xs font-bold shadow-gold-glow"
             >
               ذخیره و اعمال در تابلوی نرخ‌ها
             </Button>

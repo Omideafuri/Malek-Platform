@@ -40,7 +40,7 @@ export default async function AdminDeliveryPage() {
       <div className="grid gap-4">
         {deliveries.length === 0 ? (
           <div className="bg-white rounded-3xl p-12 text-center border border-[#E8E1D5] shadow-xs space-y-2">
-            <Package className="w-8 h-8 text-[#B8621B] mx-auto opacity-60" />
+            <Package className="w-8 h-8 text-[#C9A857] mx-auto opacity-60" />
             <p className="text-sm font-semibold text-[#141210]">هیچ درخواست ارسالی در انتظار پردازش نیست.</p>
             <p className="text-xs text-[#7D776C] font-light">سفارشات تحویل جدید به محض ثبت در این قسمت نمایش داده می‌شوند.</p>
           </div>
@@ -49,7 +49,7 @@ export default async function AdminDeliveryPage() {
             <div key={order.id} className="bg-white rounded-3xl p-6 border border-[#E8E1D5] shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2.5 mb-2">
-                  <span className="font-bold font-num text-base text-[#262A56]">
+                  <span className="font-bold font-num text-base text-[#133827]">
                     {toPersianDigits((Number(order.weightNg) / 1_000_000_000).toFixed(2))} گرم طلا
                   </span>
                   <span className="text-xs bg-[#FAF8F5] border border-[#E8E1D5] px-2.5 py-0.5 rounded-full text-[#7D776C] font-medium">
@@ -70,7 +70,7 @@ export default async function AdminDeliveryPage() {
                     'use server';
                     await updateDeliveryStatusAction(order.id, 'PROCESSING');
                   }}>
-                    <Button variant="primary" size="sm" className="rounded-full text-xs font-bold shadow-copper-glow">
+                    <Button variant="primary" size="sm" className="rounded-full text-xs font-bold shadow-gold-glow">
                       تأیید و صدور مجوز خروج
                     </Button>
                   </form>

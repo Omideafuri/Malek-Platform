@@ -21,7 +21,7 @@ import { formatNumber, formatToman, toPersianDigits } from '@/lib/utils/format';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'میز اختصاصی معاملات و دارایی‌ها — زروی',
+  title: 'میز اختصاصی معاملات و دارایی‌ها — ملک طلا',
 };
 
 export default async function DashboardPage() {
@@ -52,7 +52,7 @@ export default async function DashboardPage() {
         <div>
           <div className="flex items-center gap-2.5 mb-1.5">
             <span className="diamond-motif !w-2 !h-2" />
-            <span className="text-xs tracking-brand font-semibold text-[#7D776C]">آتلیه اختصاصی سرمایه‌گذاری</span>
+            <span className="text-xs tracking-brand font-semibold text-[#7D776C]">گالری اختصاصی سرمایه‌گذاری</span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#141210] tracking-tight">
             خوش‌آمدید، {user.profile?.firstName || 'همراه گرامی'}
@@ -62,15 +62,15 @@ export default async function DashboardPage() {
         {/* Live Indicator Badge */}
         <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-[#E8E1D5] shadow-xs text-xs self-start sm:self-auto">
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          <span className="text-[#262A56] font-semibold">ارتباط مستقیم با خزانه</span>
+          <span className="text-[#133827] font-semibold">ارتباط مستقیم با خزانه</span>
           <span className="text-[#E8E1D5]">|</span>
           <span className="text-[11px] text-[#7D776C] font-mono">۲۴/۷</span>
         </div>
       </div>
 
-      {/* ━━━ SECTION 1: TOTAL PORTFOLIO WEALTH CAPSULE (#262A56 Midnight Lapis) ━━━ */}
-      <div className="bg-gradient-to-br from-[#262A56] via-[#1A1D3D] to-[#000000] text-white rounded-3xl p-8 sm:p-10 md:p-12 border border-white/15 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-[#B8621B]/15 rounded-full blur-3xl pointer-events-none" />
+      {/* ━━━ SECTION 1: TOTAL PORTFOLIO WEALTH CAPSULE (#133827 Midnight Lapis) ━━━ */}
+      <div className="bg-gradient-to-br from-[#133827] via-[#0A2218] to-[#000000] text-white rounded-3xl p-8 sm:p-10 md:p-12 border border-white/15 shadow-2xl relative overflow-hidden">
+        <div className="absolute top-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-[#C9A857]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <div>
@@ -96,13 +96,13 @@ export default async function DashboardPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <Link href="/buy" className="w-full sm:w-auto">
-              <Button variant="primary" className="w-full sm:w-auto px-7 py-3 rounded-full text-xs font-semibold shadow-copper-glow flex items-center justify-center gap-2">
+              <Button variant="primary" className="w-full sm:w-auto px-7 py-3 rounded-full text-xs font-semibold shadow-gold-glow flex items-center justify-center gap-2">
                 <span>خرید آنلاین طلا</span>
                 <ArrowLeft className="w-4 h-4" />
               </Button>
             </Link>
             <Link href="/sell" className="w-full sm:w-auto">
-              <Button variant="outline" className="w-full sm:w-auto px-6 py-3 rounded-full text-xs font-semibold border-white/30 text-white hover:bg-white hover:text-[#262A56] justify-center">
+              <Button variant="outline" className="w-full sm:w-auto px-6 py-3 rounded-full text-xs font-semibold border-white/30 text-white hover:bg-white hover:text-[#133827] justify-center">
                 فروش موجودی
               </Button>
             </Link>
@@ -119,9 +119,9 @@ export default async function DashboardPage() {
             <div className="flex justify-between items-start mb-6">
               <div className="flex items-center gap-2">
                 <span className="diamond-motif !w-2 !h-2" />
-                <span className="text-[11px] tracking-brand font-bold text-[#262A56] uppercase">خزانه طلای دیجیتال</span>
+                <span className="text-[11px] tracking-brand font-bold text-[#133827] uppercase">خزانه طلای دیجیتال</span>
               </div>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/70 text-[#262A56] font-semibold">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/70 text-[#133827] font-semibold">
                 18K GOLD
               </span>
             </div>
@@ -134,16 +134,16 @@ export default async function DashboardPage() {
             </div>
 
             <p className="text-xs text-[#4A463F] font-light">
-              ارزش روز: <span className="font-num font-bold text-[#262A56]">{formatToman(goldValueToman)}</span>
+              ارزش روز: <span className="font-num font-bold text-[#133827]">{formatToman(goldValueToman)}</span>
             </p>
           </div>
 
           <div className="mt-8 pt-4 border-t border-[#D1C7B7] flex justify-between items-center text-xs">
-            <Link href="/transfer" className="font-bold text-[#262A56] hover:text-[#B8621B] flex items-center gap-1 transition-colors">
+            <Link href="/transfer" className="font-bold text-[#133827] hover:text-[#C9A857] flex items-center gap-1 transition-colors">
               <span>انتقال به دیگری</span>
               <ArrowLeft className="w-3.5 h-3.5" />
             </Link>
-            <Link href="/delivery" className="font-bold text-[#262A56] hover:text-[#B8621B] flex items-center gap-1 transition-colors">
+            <Link href="/delivery" className="font-bold text-[#133827] hover:text-[#C9A857] flex items-center gap-1 transition-colors">
               <span>درخواست تحویل فیزیکی</span>
               <ArrowLeft className="w-3.5 h-3.5" />
             </Link>
@@ -151,11 +151,11 @@ export default async function DashboardPage() {
         </div>
 
         {/* Pod 2: Cash Rial Wallet (Deep Obsidian Black #000000) */}
-        <div className="bg-[#000000] text-white rounded-3xl p-6 sm:p-8 border border-white/15 shadow-2xl flex flex-col justify-between group hover:border-[#B8621B]/40 transition-colors">
+        <div className="bg-[#000000] text-white rounded-3xl p-6 sm:p-8 border border-white/15 shadow-2xl flex flex-col justify-between group hover:border-[#C9A857]/40 transition-colors">
           <div>
             <div className="flex justify-between items-start mb-6">
               <div className="flex items-center gap-2">
-                <Wallet className="h-4 w-4 text-[#B8621B]" />
+                <Wallet className="h-4 w-4 text-[#C9A857]" />
                 <span className="text-[11px] tracking-brand font-bold text-[#E3CCAE] uppercase">کیف پول نقدی (ریالی)</span>
               </div>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/10 text-white font-semibold">
@@ -192,8 +192,8 @@ export default async function DashboardPage() {
       {/* ━━━ SECTION 3: QUICK OPERATIONS MATRIX ━━━ */}
       <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs">
         <div className="flex items-center gap-2 mb-6">
-          <Sparkles className="w-4 h-4 text-[#B8621B]" />
-          <h3 className="text-xs tracking-brand font-bold text-[#262A56] uppercase">دسترسی سریع به خدمات اختصاصی</h3>
+          <Sparkles className="w-4 h-4 text-[#C9A857]" />
+          <h3 className="text-xs tracking-brand font-bold text-[#133827] uppercase">دسترسی سریع به خدمات اختصاصی</h3>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
@@ -207,12 +207,12 @@ export default async function DashboardPage() {
             <Link
               key={action.label}
               href={action.href}
-              className="bg-[#FAF8F5] p-4 sm:p-5 rounded-2xl border border-[#E8E1D5] flex flex-col items-center justify-center text-center hover:bg-white hover:border-[#B8621B] hover:shadow-xs transition-all duration-300 group"
+              className="bg-[#FAF8F5] p-4 sm:p-5 rounded-2xl border border-[#E8E1D5] flex flex-col items-center justify-center text-center hover:bg-white hover:border-[#C9A857] hover:shadow-xs transition-all duration-300 group"
             >
-              <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center text-[#262A56] group-hover:text-[#B8621B] mb-2.5 border border-[#E8E1D5] transition-colors">
+              <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center text-[#133827] group-hover:text-[#C9A857] mb-2.5 border border-[#E8E1D5] transition-colors">
                 <action.icon className="h-4 w-4" />
               </div>
-              <span className="text-xs font-semibold text-[#141210] group-hover:text-[#262A56] transition-colors">
+              <span className="text-xs font-semibold text-[#141210] group-hover:text-[#133827] transition-colors">
                 {action.label}
               </span>
             </Link>
@@ -224,10 +224,10 @@ export default async function DashboardPage() {
       <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] shadow-xs">
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center gap-2">
-            <TrendingUp className="w-4 h-4 text-[#B8621B]" />
-            <h3 className="text-xs tracking-brand font-bold text-[#262A56] uppercase">تابلوی برخط طلای ۱۸ عیار</h3>
+            <TrendingUp className="w-4 h-4 text-[#C9A857]" />
+            <h3 className="text-xs tracking-brand font-bold text-[#133827] uppercase">تابلوی برخط طلای ۱۸ عیار</h3>
           </div>
-          <Link href="/prices" className="text-xs font-bold text-[#B8621B] hover:text-[#9E5214] flex items-center gap-1">
+          <Link href="/prices" className="text-xs font-bold text-[#C9A857] hover:text-[#9E5214] flex items-center gap-1">
             <span>مشاهده تابلوی کامل بازار</span>
             <ArrowLeft className="w-3.5 h-3.5" />
           </Link>
@@ -235,21 +235,21 @@ export default async function DashboardPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#E8E1D5]">
-            <span className="text-[11px] text-[#7D776C] block mb-1">نرخ خرید زروی از شما (فروش)</span>
+            <span className="text-[11px] text-[#7D776C] block mb-1">نرخ خرید ملک طلا از شما (فروش)</span>
             <p className="text-xl font-bold font-num text-[#141210]">{formatToman(sellPriceToman)}</p>
             <span className="text-[10px] text-[#7D776C] mt-1 block">تسویه آنی به کیف پول</span>
           </div>
 
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#E8E1D5]">
-            <span className="text-[11px] text-[#7D776C] block mb-1">نرخ فروش زروی به شما (خرید)</span>
+            <span className="text-[11px] text-[#7D776C] block mb-1">نرخ فروش ملک طلا به شما (خرید)</span>
             <p className="text-xl font-bold font-num text-[#141210]">{formatToman(buyPriceToman)}</p>
             <span className="text-[10px] text-[#7D776C] mt-1 block">واریز فوری به خزانه طلا</span>
           </div>
 
           <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-[#E8E1D5] flex flex-col justify-between">
             <span className="text-[11px] text-[#7D776C] block mb-1">منبع رسمی محاسبه</span>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#262A56]">
-              <RefreshCw className="w-3.5 h-3.5 text-[#B8621B]" />
+            <div className="flex items-center gap-2 text-xs font-semibold text-[#133827]">
+              <RefreshCw className="w-3.5 h-3.5 text-[#C9A857]" />
               <span>AlanChand (الان چند)</span>
             </div>
             <span className="text-[10px] text-[#7D776C] font-mono">به‌روزرسانی هنگام بارگذاری صفحه</span>

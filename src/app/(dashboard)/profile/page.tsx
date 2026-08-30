@@ -38,7 +38,7 @@ export default async function ProfilePage() {
         'bg-white border-[#E8E1D5] text-[#141210]'
       }`}>
         <div className="w-10 h-10 rounded-2xl bg-white/80 flex items-center justify-center flex-shrink-0 shadow-xs">
-          <Shield className="h-5 w-5 text-[#B8621B]" />
+          <Shield className="h-5 w-5 text-[#C9A857]" />
         </div>
         <div>
           <h2 className="font-bold text-base mb-1">
@@ -68,7 +68,7 @@ export default async function ProfilePage() {
                   type="text" 
                   name="firstName"
                   defaultValue={profile?.firstName || ''}
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
               </div>
@@ -78,7 +78,7 @@ export default async function ProfilePage() {
                   type="text" 
                   name="lastName"
                   defaultValue={profile?.lastName || ''}
-                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                  className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                   required 
                 />
               </div>
@@ -91,20 +91,20 @@ export default async function ProfilePage() {
                 name="nationalId"
                 dir="ltr"
                 defaultValue={profile?.nationalId || ''}
-                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#B8621B] focus:bg-white transition-all"
+                className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 font-num text-left text-xs outline-none focus:border-[#C9A857] focus:bg-white transition-all"
                 maxLength={10}
                 required 
               />
             </div>
 
             <div className="p-4 bg-[#FAF8F5] border border-[#E8E1D5] rounded-2xl text-xs text-[#4A463F] leading-relaxed">
-              <span className="font-bold text-[#262A56]">الزام قانونی:</span> نام صاحب حساب بانکی و دارنده سیم‌کارت باید با کد ملی ثبت‌شده تطابق کامل داشته باشد.
+              <span className="font-bold text-[#133827]">الزام قانونی:</span> نام صاحب حساب بانکی و دارنده سیم‌کارت باید با کد ملی ثبت‌شده تطابق کامل داشته باشد.
             </div>
 
             <Button 
               type="submit"
               variant="primary"
-              className="w-full py-3.5 rounded-full text-xs font-bold shadow-copper-glow"
+              className="w-full py-3.5 rounded-full text-xs font-bold shadow-gold-glow"
             >
               ثبت و ارسال اطلاعات هویتی
             </Button>

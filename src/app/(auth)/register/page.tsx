@@ -28,7 +28,7 @@ export default function RegisterPage() {
   return (
     <>
       <div className="text-center mb-8">
-        <span className="text-xs tracking-brand font-semibold text-[#B8621B] block mb-1.5 uppercase">عضویت در خانه زروی</span>
+        <span className="text-xs tracking-brand font-semibold text-[#C9A857] block mb-1.5 uppercase">عضویت در ملک طلا</span>
         <h1 className="text-2xl font-bold text-[#141210] tracking-tight">افتتاح حساب کاربری</h1>
       </div>
 
@@ -48,7 +48,7 @@ export default function RegisterPage() {
               name="firstName"
               required
               placeholder="نام"
-              className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+              className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
             />
           </div>
           <div>
@@ -59,7 +59,7 @@ export default function RegisterPage() {
               name="lastName"
               required
               placeholder="نام خانوادگی"
-              className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+              className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
             />
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function RegisterPage() {
             dir="ltr"
             required
             placeholder="09123456789"
-            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs font-num placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs font-num placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
             maxLength={11}
           />
         </div>
@@ -87,7 +87,7 @@ export default function RegisterPage() {
             dir="ltr"
             required
             placeholder="حداقل ۸ کاراکتر"
-            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
           />
         </div>
 
@@ -100,17 +100,17 @@ export default function RegisterPage() {
             dir="ltr"
             required
             placeholder="تکرار رمز عبور"
-            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#B8621B] focus:bg-white outline-none transition-all"
+            className="w-full rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] px-4 py-3 text-xs placeholder:text-[#7D776C] focus:border-[#C9A857] focus:bg-white outline-none transition-all"
           />
         </div>
 
         <label className="flex items-start gap-2.5 cursor-pointer pt-2">
-          <input type="checkbox" required className="mt-1 h-4 w-4 rounded border-[#E8E1D5] text-[#262A56] focus:ring-0 accent-[#B8621B]" />
+          <input type="checkbox" required className="mt-1 h-4 w-4 rounded border-[#E8E1D5] text-[#133827] focus:ring-0 accent-[#C9A857]" />
           <span className="text-xs text-[#4A463F] leading-relaxed">
             <Link href="/terms" className="underline hover:text-[#141210]">قوانین و مقررات</Link>
             {' '}و{' '}
             <Link href="/privacy" className="underline hover:text-[#141210]">حریم خصوصی</Link>
-            {' '}خانه زروی را می‌پذیرم.
+            {' '}مجموعه ملک طلا را می‌پذیرم.
           </span>
         </label>
 
@@ -119,7 +119,7 @@ export default function RegisterPage() {
             type="submit"
             isLoading={isPending}
             variant="primary"
-            className="w-full py-4 rounded-full text-xs font-bold shadow-copper-glow flex items-center justify-center gap-2"
+            className="w-full py-4 rounded-full text-xs font-bold shadow-gold-glow flex items-center justify-center gap-2"
           >
             <span>افتتاح حساب کاربری</span>
             <ArrowLeft className="w-4 h-4" />
@@ -129,7 +129,7 @@ export default function RegisterPage() {
 
       <p className="mt-8 text-center text-xs text-[#4A463F] border-t border-[#E8E1D5] pt-6">
         قبلاً حساب باز کرده‌اید؟{' '}
-        <Link href="/login" className="font-bold text-[#262A56] hover:text-[#B8621B] transition-colors">
+        <Link href="/login" className="font-bold text-[#133827] hover:text-[#C9A857] transition-colors">
           ورود به حساب
         </Link>
       </p>

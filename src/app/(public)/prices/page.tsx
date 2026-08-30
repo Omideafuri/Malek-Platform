@@ -9,8 +9,8 @@ import { TrendingUp, TrendingDown, Clock, ShieldCheck, RefreshCw, Database } fro
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'تابلوی رسمی نرخ طلا و مسکوکات — زروی',
-  description: 'قیمت لحظه‌ای و رسمی بازار طلای ۱۸ و ۲۴ عیار، مثقال، مسکوکات بهار آزادی و انس طلا از منبع AlanChand.',
+  title: 'تابلوی رسمی نرخ طلا و مسکوکات — ملک طلا',
+  description: 'قیمت لحظه‌ای و رسمی بازار طلای ۱۸ و ۲۴ عیار، مثقال، مسکوکات بهار آزادی و انس طلا در گالری ملک طلا.',
 };
 
 export default async function PricesPage() {
@@ -55,7 +55,7 @@ export default async function PricesPage() {
             {/* Timestamp & Source Badge */}
             <div className="flex flex-wrap items-center gap-3 text-xs text-[#7D776C] bg-white px-3.5 py-1.5 border border-[#E8E1D5] rounded-full self-start md:self-auto shadow-xs">
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              <span className="font-medium text-[#262A56]">منبع: AlanChand</span>
+              <span className="font-medium text-[#133827]">منبع: AlanChand</span>
               <span>·</span>
               <span className="flex items-center gap-1">
                 <Clock className="w-3 h-3 text-[#7D776C]" />
@@ -67,7 +67,7 @@ export default async function PricesPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#141210] tracking-tight mb-4">
-            تابلوی معاملات زروی
+            تابلوی معاملات ملک طلا
           </h1>
           <p className="text-base sm:text-lg text-[#4A463F] leading-relaxed font-light max-w-2xl">
             نرخ‌های اعلامی به صورت مستقیم از منبع رسمی AlanChand دریافت شده و قیمت‌ها بر پایه تومان (اصلی) و ریال (معادل بانکی) نمایش داده می‌شوند.
@@ -78,12 +78,12 @@ export default async function PricesPage() {
         <div className="border border-[#E8E1D5] bg-white rounded-3xl p-8 md:p-12 mb-12 shadow-sm">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-[#E8E1D5] pb-8 mb-8 gap-4">
             <div>
-              <span className="text-xs tracking-brand text-[#B8621B] block mb-2 font-semibold">شاخص اصلی مبادلات پلتفرم</span>
+              <span className="text-xs tracking-brand text-[#C9A857] block mb-2 font-semibold">شاخص اصلی مبادلات پلتفرم</span>
               <h2 className="text-2xl md:text-3xl font-bold text-[#141210]">هر گرم طلای ۱۸ عیار (۷۵۰)</h2>
             </div>
             <div className="text-left">
               <span className="text-xs tracking-brand text-[#7D776C] block mb-1">قیمت مرجع بازار</span>
-              <p className="text-3xl md:text-4xl font-bold font-num text-[#262A56] tracking-tight">
+              <p className="text-3xl md:text-4xl font-bold font-num text-[#133827] tracking-tight">
                 {toPersianDigits(formatNumber(refToman))} <span className="text-sm font-normal text-[#7D776C]">تومان</span>
               </p>
               <p className="text-xs font-num text-[#7D776C] mt-1">
@@ -94,7 +94,7 @@ export default async function PricesPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="border border-[#E8E1D5] p-6 bg-[#FAF8F5] rounded-2xl">
-              <span className="text-xs text-[#7D776C] block mb-2 font-medium">نرخ خرید زروی از شما (فروش موجودی)</span>
+              <span className="text-xs text-[#7D776C] block mb-2 font-medium">نرخ خرید ملک طلا از شما (فروش موجودی)</span>
               <p className="text-2xl md:text-3xl font-bold font-num text-[#141210]">
                 {toPersianDigits(formatNumber(sellToman))} <span className="text-sm font-normal text-[#7D776C]">تومان</span>
               </p>
@@ -105,7 +105,7 @@ export default async function PricesPage() {
             </div>
 
             <div className="border border-[#E8E1D5] p-6 bg-[#FAF8F5] rounded-2xl">
-              <span className="text-xs text-[#7D776C] block mb-2 font-medium">نرخ فروش زروی به شما (خرید آنلاین)</span>
+              <span className="text-xs text-[#7D776C] block mb-2 font-medium">نرخ فروش ملک طلا به شما (خرید آنلاین)</span>
               <p className="text-2xl md:text-3xl font-bold font-num text-[#141210]">
                 {toPersianDigits(formatNumber(buyToman))} <span className="text-sm font-normal text-[#7D776C]">تومان</span>
               </p>
@@ -118,9 +118,9 @@ export default async function PricesPage() {
 
           <div className="flex flex-col sm:flex-row justify-between items-center border-t border-[#E8E1D5] pt-6 gap-4 text-sm text-[#4A463F]">
             <div className="flex items-center gap-3">
-              <ShieldCheck className="w-4 h-4 text-[#B8621B]" />
+              <ShieldCheck className="w-4 h-4 text-[#C9A857]" />
               <span>اسپرد معاملاتی:</span>
-              <span className="font-num font-bold text-[#B8621B]">{toPersianDigits(formatNumber(spreadToman))} تومان</span>
+              <span className="font-num font-bold text-[#C9A857]">{toPersianDigits(formatNumber(spreadToman))} تومان</span>
               <span className="text-xs text-[#7D776C]">({toPersianDigits(formatNumber(spreadRial))} ریال)</span>
             </div>
             <div className="flex gap-3 w-full sm:w-auto">
@@ -142,7 +142,7 @@ export default async function PricesPage() {
               <h2 className="text-xl md:text-2xl font-bold text-[#141210]">نرخ انواع طلا، مسکوکات و انس جهانی</h2>
             </div>
             <div className="flex items-center gap-2 text-xs text-[#7D776C]">
-              <Database className="w-3.5 h-3.5 text-[#B8621B]" />
+              <Database className="w-3.5 h-3.5 text-[#C9A857]" />
               <span>منبع: AlanChand API</span>
             </div>
           </div>

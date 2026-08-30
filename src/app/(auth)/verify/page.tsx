@@ -89,12 +89,12 @@ function VerifyForm() {
   return (
     <>
       <div className="text-center mb-8">
-        <span className="text-xs tracking-brand font-semibold text-[#B8621B] block mb-1.5 uppercase">امنیت دوعاملی</span>
+        <span className="text-xs tracking-brand font-semibold text-[#C9A857] block mb-1.5 uppercase">امنیت دوعاملی</span>
         <h1 className="text-2xl font-bold text-[#141210] tracking-tight">تأیید شماره موبایل</h1>
         <p className="mt-2 text-xs text-[#4A463F] font-light">
           کد ۶ رقمی ارسال شده به شماره زیر را وارد نمایید:
         </p>
-        <p className="mt-1 text-sm font-num font-bold text-[#262A56]" dir="ltr">
+        <p className="mt-1 text-sm font-num font-bold text-[#133827]" dir="ltr">
           {maskedMobile}
         </p>
       </div>
@@ -117,7 +117,7 @@ function VerifyForm() {
               value={digit}
               onChange={(e) => handleInputChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="h-12 w-12 rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] text-center text-lg font-num font-bold text-[#141210] focus:border-[#B8621B] focus:bg-white outline-none transition-all shadow-xs"
+              className="h-12 w-12 rounded-2xl border border-[#E8E1D5] bg-[#FAF8F5] text-center text-lg font-num font-bold text-[#141210] focus:border-[#C9A857] focus:bg-white outline-none transition-all shadow-xs"
             />
           ))}
         </div>
@@ -127,7 +127,7 @@ function VerifyForm() {
           {timer > 0 ? (
             <p className="text-[#7D776C]">
               ارسال مجدد کد تا {' '}
-              <span className="font-num text-[#262A56] font-bold">{formattedTimer}</span>
+              <span className="font-num text-[#133827] font-bold">{formattedTimer}</span>
               {' '}دیگر
             </p>
           ) : (
@@ -149,7 +149,7 @@ function VerifyForm() {
           disabled={code.join('').length < 6}
           isLoading={isPending}
           variant="primary"
-          className="w-full py-4 rounded-full text-xs font-bold shadow-copper-glow flex items-center justify-center gap-2"
+          className="w-full py-4 rounded-full text-xs font-bold shadow-gold-glow flex items-center justify-center gap-2"
         >
           <span>تأیید و ورود به پنل</span>
           <ArrowLeft className="w-4 h-4" />

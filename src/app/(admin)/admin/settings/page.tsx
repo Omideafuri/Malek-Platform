@@ -15,10 +15,10 @@ export default function AdminSettingsPage() {
       </div>
 
       <div className="bg-white rounded-3xl p-12 text-center border border-[#E8E1D5] shadow-xs space-y-3">
-        <div className="w-14 h-14 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] mx-auto flex items-center justify-center text-[#B8621B]">
+        <div className="w-14 h-14 rounded-2xl bg-[#FAF8F5] border border-[#E8E1D5] mx-auto flex items-center justify-center text-[#C9A857]">
           <Sliders className="h-7 w-7" />
         </div>
-        <h2 className="text-lg font-bold text-[#262A56]">تنظیمات هسته معاملاتی</h2>
+        <h2 className="text-lg font-bold text-[#133827]">تنظیمات هسته معاملاتی</h2>
         <p className="text-xs text-[#4A463F] max-w-md mx-auto font-light">
           پیکربندی سوئیچینگ درگاه‌های پرداخت، وب‌هوک‌های سامانه پیامکی و قفل‌های امنیتی فعال است.
         </p>

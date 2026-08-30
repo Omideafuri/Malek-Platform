@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Signature Colors — #000000 · #262A56 · #B8621B · #E3CCAE */
+  /* Brand Signature Colors — #000000 · #133827 · #C9A857 · #E3CCAE */
   --breakpoint-xs: 26rem;
 
   --color-brand-black: #000000;
-  --color-brand-navy: #262A56;
-  --color-brand-copper: #B8621B;
+  --color-brand-forest: #133827;
+  --color-brand-gold: #C9A857;
   --color-brand-champagne: #E3CCAE;
 
   /* Semantic Canvas & Surfaces */
@@ -14,17 +14,17 @@
   --color-bg-secondary: #F4EFE6;
   --color-bg-champagne: #E3CCAE;
   --color-bg-elevated: #FFFFFF;
-  --color-bg-surface-dark: #262A56;
-  --color-bg-surface-darker: #1A1D3D;
+  --color-bg-surface-dark: #133827;
+  --color-bg-surface-darker: #0A2218;
   --color-bg-floor: #000000;
-  --color-bg-accent-soft: rgba(184, 98, 27, 0.12);
+  --color-bg-accent-soft: rgba(201, 168, 87, 0.12);
 
   /* Semantic Typography */
   --color-text-primary: #141210;
   --color-text-secondary: #4A463F;
   --color-text-muted: #7D776C;
-  --color-text-brand: #262A56;
-  --color-text-accent: #B8621B;
+  --color-text-brand: #133827;
+  --color-text-accent: #C9A857;
   --color-text-champagne: #E3CCAE;
   --color-text-on-dark: #FAF8F5;
   --color-text-on-dark-muted: #C5BFB4;
@@ -34,14 +34,14 @@
   --color-border-subtle: #E8E1D5;
   --color-border-medium: #D1C7B7;
   --color-border-dark: rgba(227, 204, 174, 0.18);
-  --color-border-accent: #B8621B;
+  --color-border-accent: #C9A857;
 
   /* Semantic Action & Accent States */
-  --color-accent-primary: #B8621B;
+  --color-accent-primary: #C9A857;
   --color-accent-hover: #9E5214;
   --color-accent-active: #82430F;
-  --color-brand-primary: #262A56;
-  --color-brand-hover: #1D2042;
+  --color-brand-primary: #133827;
+  --color-brand-hover: #0D2B1E;
 
   /* Semantic Status Indicators */
   --color-success: #3D6647;
@@ -68,11 +68,11 @@
   --radius-full: 9999px;
 
   /* Shadows — Restrained & Purposeful */
-  --shadow-subtle: 0 2px 8px rgba(38, 42, 86, 0.04);
-  --shadow-card: 0 12px 36px rgba(38, 42, 86, 0.06);
-  --shadow-elevated: 0 24px 64px rgba(38, 42, 86, 0.12);
-  --shadow-copper-glow: 0 8px 28px rgba(184, 98, 27, 0.28);
-  --shadow-navy-glow: 0 8px 28px rgba(38, 42, 86, 0.35);
+  --shadow-subtle: 0 2px 8px rgba(19, 56, 39, 0.04);
+  --shadow-card: 0 12px 36px rgba(19, 56, 39, 0.06);
+  --shadow-elevated: 0 24px 64px rgba(19, 56, 39, 0.12);
+  --shadow-gold-glow: 0 8px 28px rgba(201, 168, 87, 0.28);
+  --shadow-forest-glow: 0 8px 28px rgba(19, 56, 39, 0.35);
 
   /* Animation timing */
   --ease-editorial: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -111,7 +111,7 @@
 
   /* Selection */
   ::selection {
-    background-color: var(--color-brand-copper);
+    background-color: var(--color-brand-gold);
     color: #FFFFFF;
   }
 }
@@ -148,15 +148,15 @@
   }
 
   /* Orosi Glass Light Blooms & Radial Refractions */
-  .bg-atmospheric-navy {
-    background: radial-gradient(circle at 80% 20%, rgba(184, 98, 27, 0.22) 0%, transparent 60%),
+  .bg-atmospheric-forest {
+    background: radial-gradient(circle at 80% 20%, rgba(201, 168, 87, 0.22) 0%, transparent 60%),
                 radial-gradient(circle at 15% 85%, rgba(0, 0, 0, 0.65) 0%, transparent 65%),
-                var(--color-brand-navy);
+                var(--color-brand-forest);
   }
 
   .bg-atmospheric-black {
-    background: radial-gradient(circle at 75% 25%, rgba(184, 98, 27, 0.2) 0%, transparent 55%),
-                radial-gradient(circle at 20% 80%, rgba(38, 42, 86, 0.4) 0%, transparent 60%),
+    background: radial-gradient(circle at 75% 25%, rgba(201, 168, 87, 0.2) 0%, transparent 55%),
+                radial-gradient(circle at 20% 80%, rgba(19, 56, 39, 0.4) 0%, transparent 60%),
                 var(--color-brand-black);
   }
 
@@ -167,7 +167,7 @@
   }
 
   .bg-orosi-blend {
-    background: linear-gradient(135deg, #262A56 0%, #1A1D3D 50%, #000000 100%);
+    background: linear-gradient(135deg, #133827 0%, #0A2218 50%, #000000 100%);
   }
 
   .bg-champagne-warm {
@@ -179,7 +179,7 @@
     display: inline-block;
     width: 7px;
     height: 7px;
-    background-color: var(--color-brand-copper);
+    background-color: var(--color-brand-gold);
     transform: rotate(45deg);
     transition: transform 0.4s var(--ease-editorial);
   }

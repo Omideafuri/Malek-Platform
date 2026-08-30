@@ -19,17 +19,17 @@ export function BentoCard({
   return (
     <div
       className={cn(
-        'bg-white p-8 rounded-3xl border border-[#E8E1D5] shadow-xs hover:border-[#B8621B]/40 hover:shadow-md transition-all duration-500 flex flex-col justify-between',
+        'bg-white p-8 rounded-3xl border border-[#E8E1D5] shadow-xs hover:border-[#C9A857]/40 hover:shadow-md transition-all duration-500 flex flex-col justify-between',
         className
       )}
     >
       <div>
-        <div className="w-12 h-12 rounded-2xl bg-[#F4EFE6] flex items-center justify-center text-[#262A56] mb-6 border border-[#E8E1D5]">
+        <div className="w-12 h-12 rounded-2xl bg-[#F4EFE6] flex items-center justify-center text-[#133827] mb-6 border border-[#E8E1D5]">
           {icon}
         </div>
 
         {tag && (
-          <span className="text-[10px] tracking-brand font-bold text-[#B8621B] block mb-1 uppercase">
+          <span className="text-[10px] tracking-brand font-bold text-[#C9A857] block mb-1 uppercase">
             {tag}
           </span>
         )}

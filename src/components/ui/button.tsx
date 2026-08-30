@@ -17,7 +17,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, className, variant = 'primary', size = 'md', isLoading, icon, disabled, ...props }, ref) => {
 
-    const baseClasses = "relative inline-flex items-center justify-center font-medium tracking-wide transition-all duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1)] active:scale-[0.985] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8621B] focus-visible:ring-offset-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none disabled:active:scale-100 select-none cursor-pointer";
+    const baseClasses = "relative inline-flex items-center justify-center font-medium tracking-wide transition-all duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1)] active:scale-[0.985] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A857] focus-visible:ring-offset-2 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none disabled:active:scale-100 select-none cursor-pointer";
 
     const sizeClasses = {
       sm: "h-10 px-5 text-xs tracking-wider rounded-full",
@@ -28,16 +28,16 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     }[size];
 
     const variantClasses = {
-      primary: "bg-[#B8621B] text-white border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#B8621B]/20",
-      secondary: "bg-[#262A56] text-[#FAF8F5] border border-transparent hover:bg-[#1D2042] hover:shadow-lg hover:shadow-[#262A56]/20",
-      outline: "border border-[#262A56] text-[#262A56] bg-transparent hover:bg-[#262A56] hover:text-[#FAF8F5]",
+      primary: "bg-[#C9A857] text-white border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#C9A857]/20",
+      secondary: "bg-[#133827] text-[#FAF8F5] border border-transparent hover:bg-[#0D2B1E] hover:shadow-lg hover:shadow-[#133827]/20",
+      outline: "border border-[#133827] text-[#133827] bg-transparent hover:bg-[#133827] hover:text-[#FAF8F5]",
       ghost: "text-[#4A463F] hover:text-[#141210] hover:bg-[#F4EFE6]",
       danger: "bg-danger text-white border border-transparent hover:bg-danger/90",
-      icon: "text-[#4A463F] hover:text-[#262A56] hover:bg-[#F4EFE6] border border-[#E8E1D5]",
-      pill: "bg-[#FAF8F5] text-[#262A56] border border-[#E8E1D5] hover:border-[#262A56] hover:bg-[#262A56] hover:text-white",
-      gold: "bg-[#B8621B] text-white font-medium border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#B8621B]/20",
-      copper: "bg-[#B8621B] text-white font-medium border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#B8621B]/20",
-      dark: "bg-[#000000] text-white border border-transparent hover:bg-[#1A1D3D] hover:shadow-lg",
+      icon: "text-[#4A463F] hover:text-[#133827] hover:bg-[#F4EFE6] border border-[#E8E1D5]",
+      pill: "bg-[#FAF8F5] text-[#133827] border border-[#E8E1D5] hover:border-[#133827] hover:bg-[#133827] hover:text-white",
+      gold: "bg-[#C9A857] text-white font-medium border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#C9A857]/20",
+      copper: "bg-[#C9A857] text-white font-medium border border-transparent hover:bg-[#9E5214] hover:shadow-lg hover:shadow-[#C9A857]/20",
+      dark: "bg-[#000000] text-white border border-transparent hover:bg-[#0A2218] hover:shadow-lg",
     }[variant];
 
     return (

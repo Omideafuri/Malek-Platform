@@ -143,7 +143,7 @@ export interface BrandWatermarkProps extends React.HTMLAttributes<HTMLDivElement
 }
 
 export function BrandWatermark({
-  text = 'ZARAVI',
+  text = 'MALEK TALAA',
   className,
   ...props
 }: BrandWatermarkProps) {

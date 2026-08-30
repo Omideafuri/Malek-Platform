@@ -11,15 +11,19 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
+    'ملک طلا',
+    'Malek Talaa',
+    'گالری ملک طلا',
+    '@malektalaa',
     'خرید طلا',
     'فروش طلا',
-    'قیمت طلا',
+    'قیمت لحظه‌ای طلا',
     'سرمایه‌گذاری طلا',
-    'طلای دیجیتال',
-    'زروی',
-    'Zaravi Gold',
+    'شمش طلا ۲۴ عیار',
+    'سکه بهار آزادی',
+    'گالری طلا و جواهر',
   ],
-  authors: [{ name: 'Zaravi Gold', url: siteConfig.url }],
+  authors: [{ name: 'Malek Talaa', url: siteConfig.url }],
   openGraph: {
     title: `${siteConfig.nameFa} — ${siteConfig.description}`,
     description: siteConfig.description,
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#262A56',
+  themeColor: '#133827',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,

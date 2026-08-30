@@ -119,7 +119,7 @@ export async function fetchAlanChandMarketRates(): Promise<ComprehensiveMarketRa
       headers: {
         'Authorization': `Bearer ${token}`,
         'Accept': 'application/json',
-        'User-Agent': 'ZaraviGold-Platform/1.0',
+        'User-Agent': 'MalekTalaa-Platform/1.0',
       },
       signal: controller.signal,
       next: { revalidate: 20 },

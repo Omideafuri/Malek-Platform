@@ -28,7 +28,7 @@ export function ProductCard({
   return (
     <div
       className={cn(
-        'group bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] flex flex-col justify-between hover:border-[#B8621B]/40 hover:shadow-xl transition-all duration-500',
+        'group bg-white rounded-3xl p-6 sm:p-8 border border-[#E8E1D5] flex flex-col justify-between hover:border-[#C9A857]/40 hover:shadow-xl transition-all duration-500',
         className
       )}
     >
@@ -41,11 +41,11 @@ export function ProductCard({
           className="mb-6 bg-[#FAF8F5] p-4 border border-[#E8E1D5]/60"
         />
 
-        <span className="text-[10px] tracking-brand font-bold text-[#B8621B] block mb-1 uppercase">
+        <span className="text-[10px] tracking-brand font-bold text-[#C9A857] block mb-1 uppercase">
           {category}
         </span>
 
-        <h3 className="text-lg md:text-xl font-bold text-[#141210] mb-2 group-hover:text-[#262A56] transition-colors">
+        <h3 className="text-lg md:text-xl font-bold text-[#141210] mb-2 group-hover:text-[#133827] transition-colors">
           {title}
         </h3>
 
@@ -59,7 +59,7 @@ export function ProductCard({
 
         <Link
           href={href}
-          className="inline-flex items-center gap-1 text-xs font-bold text-[#262A56] hover:text-[#B8621B] transition-colors"
+          className="inline-flex items-center gap-1 text-xs font-bold text-[#133827] hover:text-[#C9A857] transition-colors"
         >
           <span>خرید و تحویل</span>
           <ArrowLeft className="w-3.5 h-3.5" />

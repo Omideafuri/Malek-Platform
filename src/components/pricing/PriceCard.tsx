@@ -88,14 +88,14 @@ export function PriceCard({
       {/* Buy/Sell Prices */}
       <div className="grid grid-cols-2 gap-3">
         <div className="rounded-lg bg-success-light/50 p-3">
-          <p className="text-xs text-text-muted mb-1">قیمت خرید زروی</p>
+          <p className="text-xs text-text-muted mb-1">قیمت خرید ملک طلا</p>
           <p className="text-sm font-bold font-num text-success">
             {formatNumber(buyPriceToman)}
             <span className="text-xs font-normal mr-0.5">ت</span>
           </p>
         </div>
         <div className="rounded-lg bg-danger-light/50 p-3">
-          <p className="text-xs text-text-muted mb-1">قیمت فروش زروی</p>
+          <p className="text-xs text-text-muted mb-1">قیمت فروش ملک طلا</p>
           <p className="text-sm font-bold font-num text-danger">
             {formatNumber(sellPriceToman)}
             <span className="text-xs font-normal mr-0.5">ت</span>

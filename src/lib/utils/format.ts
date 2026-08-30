@@ -1,5 +1,5 @@
 /**
- * Persian formatting utilities for Zaravi Gold.
+ * Persian formatting utilities for Malek Talaa.
  * Handles Persian numerals, currency, dates, and phone numbers.
  */
 
