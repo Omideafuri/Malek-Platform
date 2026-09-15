@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Malek Platform
 
-## Getting Started
+Full-stack web application for Malek Gold featuring a deep forest green luxury design system, official branding, and 3D visuals.
 
-First, run the development server:
+## Overview
+
+**Malek Platform** represents the foundational rebrand build of the Malek luxury gold trading ecosystem. It integrates Three.js interactive 3D bullion representations with a full-stack Next.js and Prisma PostgreSQL backend.
+
+## Features
+
+- **3D Asset Pipeline**: Three.js integration for interactive product inspection of minted gold bars and commemorative coins.
+- **Forest Green Aesthetic**: Deep luxury palette paired with warm gold metallic accents and refined typography.
+- **Full-Stack Account Management**: Role-based access control (User, Support, Finance, Admin, Super Admin) with Prisma schema enforcement.
+
+## Technology
+
+- **Frontend**: Next.js 16, React, TypeScript
+- **3D Graphics**: Three.js (`@types/three`)
+- **Animation**: Framer Motion
+- **Database & ORM**: PostgreSQL, Prisma 7
+
+## Status
+
+**Rebrand Milestone & Visual Platform** — Secondary portfolio project.
+
+## Running Locally
 
 ```bash
+git clone https://github.com/Omideafuri/Malek-Platform.git
+cd Malek-Platform
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
